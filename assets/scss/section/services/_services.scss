@@ -1,6 +1,11 @@
 .services-section {
     padding: 100px 0;
 
+    @media (max-width: 991.98px) {
+        padding-left: 15px;
+        padding-right: 15px;
+     }
+
     [class^="col"] {
         margin-bottom: 30px;
     }
@@ -70,6 +75,7 @@
 
             h3 {
                 text-align: center;
+                padding-bottom: 10px;
 
                 a {
                     color: $bColor;
@@ -95,6 +101,7 @@
                         font-size: 18px;
                         line-height: 28px;
                         transition: $transition;
+                        font-weight: 300;
 
                         &::after {
                             content: '';

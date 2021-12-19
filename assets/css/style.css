@@ -193,6 +193,13 @@ ul {
   width: 100%;
 }
 
+@media (max-width: 767.98px) {
+  .header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .header .header-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -360,6 +367,18 @@ ul {
   transition: all 0.4s;
   -webkit-transition-delay: .5s;
           transition-delay: .5s;
+}
+
+@media (max-width: 767.98px) {
+  .header-menu nav ul {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header-menu nav ul li {
+    text-align: center;
+  }
 }
 
 .header-menu nav ul li a {
@@ -701,6 +720,7 @@ ul {
   color: #ffffff;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
 }
 
 @media (max-width: 991.98px) {
@@ -786,8 +806,23 @@ ul {
 }
 
 .banner.page-banner h1 {
-  font-size: 64px;
+  font-size: 56px;
   line-height: 76px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 991.98px) {
+  .banner.page-banner h1 {
+    font-size: 46px;
+    line-height: 58px;
+  }
+}
+
+@media (max-width: 575px) {
+  .banner.page-banner h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
 }
 
 .about-section {
@@ -806,6 +841,13 @@ ul {
 .about-section h2 {
   font-size: 38px;
   line-height: 58px;
+}
+
+@media (max-width: 767.98px) {
+  .about-section h2 {
+    font-size: 26px;
+    line-height: 38px;
+  }
 }
 
 .about-section p {
@@ -999,6 +1041,13 @@ ul {
   padding: 100px 0;
 }
 
+@media (max-width: 991.98px) {
+  .services-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .services-section [class^="col"] {
   margin-bottom: 30px;
 }
@@ -1074,6 +1123,7 @@ ul {
 
 .services-section .item .text h3 {
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .services-section .item .text h3 a {
@@ -1099,6 +1149,7 @@ ul {
   line-height: 28px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+  font-weight: 300;
 }
 
 .services-section .item .text ul li a::after {
@@ -1129,6 +1180,13 @@ ul {
 
 .client [class^="col"] {
   margin-bottom: 30px;
+}
+
+@media (max-width: 767.98px) {
+  .client {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .client h2 {
@@ -1179,6 +1237,12 @@ ul {
   padding: 100px 0;
 }
 
+@media (max-width: 767.98px) {
+  .about-page {
+    padding: 100px 30px;
+  }
+}
+
 .about-page h2 {
   padding-bottom: 20px;
 }
@@ -1202,6 +1266,13 @@ ul {
 
 .about-page .text-content {
   padding-right: 50px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 767.98px) {
+  .about-page .text-content {
+    padding-right: 0;
+  }
 }
 
 .about-page .text-content ul li {
@@ -1267,6 +1338,13 @@ ul {
   z-index: 2;
 }
 
+@media (max-width: 991.98px) {
+  .service {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .service .service-content {
   max-width: 550px;
   padding-bottom: 100px;
@@ -1299,6 +1377,13 @@ ul {
           flex: auto;
 }
 
+@media (max-width: 991.98px) {
+  .service .portfolio .items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .service .portfolio a {
   display: block;
   margin-bottom: 30px;
@@ -1306,9 +1391,13 @@ ul {
 
 .service .portfolio .item {
   padding: 15px 15px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 25%;
+}
+
+@media (max-width: 991.98px) {
+  .service .portfolio .item {
+    width: 50%;
+  }
 }
 
 .service .portfolio .item:first-child {
@@ -1317,8 +1406,16 @@ ul {
 }
 
 .service .portfolio .item:nth-child(3) {
-  -webkit-transform: translateY(-200px);
-          transform: translateY(-200px);
+  -webkit-transform: translateY(-160px);
+          transform: translateY(-160px);
+}
+
+@media (max-width: 767.98px) {
+  .service .portfolio .item {
+    -webkit-transform: translateY(0) !important;
+            transform: translateY(0) !important;
+    width: 100%;
+  }
 }
 
 .service .portfolio .item img {
@@ -1464,6 +1561,12 @@ ul {
   padding: 100px 0;
 }
 
+@media (max-width: 991.98px) {
+  .contact-page {
+    padding: 100px 15px;
+  }
+}
+
 .contact-page .contact-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1473,6 +1576,13 @@ ul {
 
 .contact-page .contact-content .img {
   width: 50%;
+}
+
+.contact-page .contact-content .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .contact-page .contact-content .form {
@@ -1538,4 +1648,13 @@ ul {
   font-size: 16px;
   padding-left: 10px;
   margin-top: -2px;
+}
+
+@media (max-width: 991.98px) {
+  .contact-page .contact-content .img {
+    display: none;
+  }
+  .contact-page .contact-content .form {
+    width: 100%;
+  }
 }

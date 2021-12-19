@@ -11,6 +11,11 @@
     h2 {
         font-size: 38px;
         line-height: 58px;
+
+        @media (max-width: 767.98px) {
+            font-size: 26px;
+            line-height: 38px;
+        }
     }
 
     p {

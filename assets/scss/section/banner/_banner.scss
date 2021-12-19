@@ -33,6 +33,7 @@
             color: $white;
             font-weight: 400;
             font-family: $bodyFont;
+            text-transform: uppercase;
 
             @media (max-width: 991.98px) {
                 font-size: 72px;
@@ -96,8 +97,19 @@
         padding: 100px 0;
 
         h1 {
-            font-size: 64px;
+            font-size: 56px;
             line-height: 76px;
+            text-transform: uppercase;
+
+            @media (max-width: 991.98px) {
+                font-size: 46px;
+                line-height: 58px;
+            }
+
+            @media (max-width: 575px) {
+                font-size: 36px;
+                line-height: 48px;
+            }
         }
     }
 }
