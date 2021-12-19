@@ -12,4 +12,5 @@ $(document).ready(function() {
         $('.header .header-content .menu-icon .hamburger').fadeIn(150);
         $('.header-menu').removeClass('active');
     })
+    
 });

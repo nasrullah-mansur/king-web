@@ -3,6 +3,10 @@
     background-color: $secondary-color;
     color: $white;
 
+    @media (max-width: 575px) {
+        padding: 100px 30px;
+    }
+
     .remember-content {
         max-width: 450px;
         margin: 0 auto;
