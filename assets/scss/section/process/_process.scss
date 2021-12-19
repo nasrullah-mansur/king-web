@@ -1,0 +1,110 @@
+.process {
+    padding-bottom: 100px;
+
+    .process-content {
+        max-width: 850px;
+        margin: 0 auto;
+
+        h2 {
+            color: $primary-color;
+            font-weight: 400;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        .item {
+            margin-bottom: 30px;
+            text-align: center;
+
+            .icon {
+                width: 140px;
+                height: 140px;
+                position: relative;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 1;
+
+                &::before,
+                &::after {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    backface-visibility: hidden;
+                    transition: $transition;
+                }
+                
+                
+                &::before{
+                    background-color: #F3F8FC;
+                    transform: rotateY(0);
+                }
+
+                &::after {
+                    background-color: $primary-color;
+                    transform: rotateY(180deg);
+                }
+
+                i {
+                    font-size: 54px;
+                    transition: $transition;
+                }
+
+                
+            }
+
+            &:hover {
+                .icon {
+                    &::before {
+                        transform: rotateY(180deg);
+                    }
+
+                    &::after {
+                        transform: rotateY(0);
+                    }
+
+                    i {
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        .text {
+            margin-top: 10px;
+
+            h3 {
+                font-size: 18px;
+                line-height: 28px;
+                margin-bottom: 0;
+                font-weight: 400;
+                text-transform: uppercase;
+                padding-bottom: 5px;
+
+                a {
+                    color: $bColor;
+                    transition: $transition;
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+
+            span {
+                display: inline;
+                font-size: 14px;
+                font-weight: 300;
+                background-color: #fcf8e3;
+                padding: 3px 5px;
+            }
+        }
+
+        
+    }
+}

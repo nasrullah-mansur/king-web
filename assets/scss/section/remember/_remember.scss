@@ -1,0 +1,42 @@
+.remember {
+    padding: 100px 0;
+    background-color: $secondary-color;
+    color: $white;
+
+    .remember-content {
+        max-width: 450px;
+        margin: 0 auto;
+        text-align: center;
+
+        h2 {
+            font-weight: 400;
+            padding-bottom: 30px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 300;
+            margin: 0;
+
+            a {
+                color: $primary-color;
+            }
+        }
+
+        > a {
+            display: inline-block;
+            padding: 10px 30px;
+            background-color: $white;
+            color: $primary-color;
+            text-transform: uppercase;
+            margin: 20px 0;
+            transition: $transition;
+
+            &:hover {
+                background-color: $primary-color;
+                color: $white;
+            }
+        }
+    }
+}
