@@ -715,7 +715,7 @@ ul {
 }
 
 .banner .banner-content h1 {
-  font-size: 80px;
+  font-size: 72px;
   line-height: 94px;
   color: #ffffff;
   font-weight: 400;
@@ -726,6 +726,7 @@ ul {
 @media (max-width: 991.98px) {
   .banner .banner-content h1 {
     font-size: 72px;
+    padding-top: 60px;
   }
 }
 
